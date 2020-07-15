@@ -14,10 +14,6 @@
     <%= form.select :genre_id, Genre.all.collect {|p| [ p.name, p.id ] }, { include_blank: true } %>
   </div>
 
-  <div class="field">
-    <%= form.label :value, t("views.books.value")%>
-    <%= form.number_field_tag :value, nil, min: 0.1, max: 9999, step: 2
-  </div>
 
   <div class="actions">
     <%= form.submit %>
