@@ -3,16 +3,26 @@
 <hr>
   
 <form class="my-5">
-  <div class="form-group row">
-    <div class="col-md-10">
-      <input class="form-control form-control-lg" type="text" placeholder="Pesquise por nome do autor, nome do livro ou editora">
+  <%= search_form_for @q do |f| %>
+    <div class="form-group row">
+      <div class="col-md-8">
+
+        <%= f.label :name_cont %>
+        <%= f.search_field :name_cont, class: "form-control form-control-lg", placeholder: "Pesquise por nome do autor, nome do livro ou editora" %>
+
+      </div>
+      <div class="col-md-2">
+        <button type="submit" class="btn-lg btn-success">Pesquisar</button>
+      </div>
+      <div class="col-md-2">
+        <button type="submit" class="btn-lg btn-default">Limpar</button>
+      </div>
     </div>
-    <div class="col-md-2">
-      <button type="submit" class="btn-lg btn-success">Pesquisar</button>
-      <button type="submit" class="btn-lg btn-default">Limpar</button>
-    </div>
-  </div>
+
+    
+  <% end %>
 </form>
+
 
 <table class="table mt-4">
   <thead>
@@ -26,15 +36,15 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>Nome do livro 01</td>
-      <td>Nome do autor 01</td>
-      <td>Gênero 01</td>
-      <td>Editora 01</td>
-      <td>Valor (-10%)</td>
-      <td>
-        <%= link_to "Visualizar", "#"%>
-      </td>
-    </tr>
+    <% @books.each do |book| %>
+      <tr>
+        <td><%= book.name %></td>
+        <td><%= book.author.name %></td>
+        <td><%= book.genre.name %></td>
+        <td>Editora</td>
+        <td>Valor (-10%)</td>
+        <td></td>
+      </tr>
+    <% end %>
   </tbody>
 </table>

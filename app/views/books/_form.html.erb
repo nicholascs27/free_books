@@ -14,8 +14,28 @@
     <%= form.select :genre_id, Genre.all.collect {|p| [ p.name, p.id ] }, { include_blank: true } %>
   </div>
 
+  <div class="field">
+    <%= form.label :value, t("views.books.value")%>
+    <%= form.text_field :value, id: "book_value" %>
+  </div>
+
 
   <div class="actions">
     <%= form.submit %>
   </div>
+<% end %>
+
+<% content_for :js do %>
+  <script type="text/javascript">
+    $(function() {
+      $(document).trigger('refresh_autonumeric');
+      $('#book_value').autoNumeric('init', {
+        'aSep': '.',
+        'aDec': ',',
+        'aPad': true,
+        'vMin': 0.00,
+        'aSign': 'R$ '
+      });
+    });
+  </script>
 <% end %>
