@@ -42,7 +42,7 @@
         <td><%= book.author.name %></td>
         <td><%= book.genre.name %></td>
         <td>Editora</td>
-        <td>Valor (-10%)</td>
+        <td><%= book.try(:valor_desconto) %></td>
         <td></td>
       </tr>
     <% end %>
