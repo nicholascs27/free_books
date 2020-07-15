@@ -1,0 +1,20 @@
+<%= form_with(model: author, local: true) do |form| %>
+  <div class="field">
+    <%= form.label :name, t("views.authors.name") %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :biography, t("views.authors.biography") %>
+    <%= form.text_area :biography %>
+  </div>
+
+  <div class="field">
+    <%= form.label 'Photo' %>
+    <%= form.file_field :avatar %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

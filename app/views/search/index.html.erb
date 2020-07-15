@@ -1,0 +1,40 @@
+<h1>Segue abaixo exemplo de como deverá ficar a página da sua pesquisa: </h1>
+<h4>Siga os requisitos listados no README para desenvolver essa tarefa.</h4>
+<hr>
+  
+<form class="my-5">
+  <div class="form-group row">
+    <div class="col-md-10">
+      <input class="form-control form-control-lg" type="text" placeholder="Pesquise por nome do autor, nome do livro ou editora">
+    </div>
+    <div class="col-md-2">
+      <button type="submit" class="btn-lg btn-success">Pesquisar</button>
+      <button type="submit" class="btn-lg btn-default">Limpar</button>
+    </div>
+  </div>
+</form>
+
+<table class="table mt-4">
+  <thead>
+    <tr>
+      <th>Nome do livro</th>
+      <th>Nome do autor</th>
+      <th>Gênero</th>
+      <th>Editora</th>
+      <th>Valor (-10%)</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Nome do livro 01</td>
+      <td>Nome do autor 01</td>
+      <td>Gênero 01</td>
+      <td>Editora 01</td>
+      <td>Valor (-10%)</td>
+      <td>
+        <%= link_to "Visualizar", "#"%>
+      </td>
+    </tr>
+  </tbody>
+</table>

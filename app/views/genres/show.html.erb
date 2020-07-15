@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong><%= t("views.genres.name")%>:</strong>
+  <%= @genre.name %>
+</p>
+
+<%= link_to t("views.edit"), edit_author_path(@genre) %> |
+<%= link_to t("views.back"), genres_path %>
+
+<br>
+<hr>
+
+

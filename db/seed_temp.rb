@@ -1,0 +1,35 @@
+p "Seeding..."
+Author.create!([
+  {name: "Elísio da Fronteira", bio: "Who the hell is John F. Kennedy?"},
+  {name: "Dra. Daniel Grotas", bio: "The appropriate question is, 'when the hell are they?' You see, Einstein has just become the world's first time traveler! I sent him into the future. One minute into the future to be exact. And at precisely 1:21 a.m. and zero seconds, we shall catch up with him and the time machine."},
+  {name: "Kaique Dantas", bio: "Wait a minute. Wait a minute, Doc. Ah... Are you telling me that you built a time machine... out of a DeLorean?"},
+  {name: "Giovanna Brites", bio: "You want a Pepsi, pal, you're gonna pay for it."},
+  {name: "Dr. Liz Batista", bio: "Calm down, Marty. I didn't disintegrate anything. The molecular structure of both Einstein and the car are completely intact."},
+  {name: "Olívia Custódio", bio: "You're late! Do you have no concept of time?"},
+  {name: "Arthur Miguel Casqueira", bio: "Okay, thank you. That's enough. Hold it now. Hold it. Hold it, fellas. I'm afraid you're just too darn loud. Next, please. Bring in the next group, please."},
+  {name: "Yuri Galego", bio: "Hey, come on. I had to change. Do you think I'm going back in that-that zoot suit? The old man really came through. It worked!"},
+  {name: "Dr. Pedro da Madureira", bio: "Course! From a group of Lybian Nationalists They wanted me to build them a bomb, so I took their plutonium and in turn I gave them a shiny bomb caseing full of used pinball machine parts!"},
+  {name: "Morgana Fogaça Filho", bio: "Things have certainly changed around here. I remember when this was all farmland as far the eye could see. Old man Peabody owned all of this. He had this crazy idea about breeding pine trees."},
+  {name: "Theo Siqueira", bio: "I g-guess you guys aren't ready for that yet. But your kids are gonna love it."},
+  {name: "Sra. Mariana Nascimento", bio: "And one for you, McFly; I believe that makes four in a row. Now let me give you a nickel's worth of free advice, young man. This so-called Dr. Brown is dangerous. He's a real nutcase. You hang around with him, you're gonna end up in big trouble."},
+  {name: "Maria Vitória Aguiar", bio: "This is all wrong. I don't know what it is. But when I kiss you, it's like I'm kissing... my brother. I guess that doesn't make any sense, does it?"},
+  {name: "Sirineu Freitas", bio: "What happens to us in the future? Do we become assholes or something?"},
+  {name: "Carlos Pires", bio: "There's that word again. 'Heavy.' Why are things so heavy in the future? Is there a problem with the Earth's gravitational pull?"},
+  {name: "Luna da Fonseca", bio: "Hey, McFly! I thought I told you never to come in here."},
+  {name: "Pedro Ornelas", bio: "Stand tall, boy. Have some respect for yourself. Don't you know, if you let people walk over you now, they'll be walking over you for the rest of your life. Look at me. You think I'm gonna spend the rest of my life in this slop house?"},
+  {name: "Luiz Henrique Viveiros", bio: "Weight has nothing to do with it."},
+  {name: "João Felipe da Nóbrega Jr.", bio: "What happens to us in the future? Do we become assholes or something?"},
+  {name: "João Luca Freitas", bio: "Silence, Earthling. My name is Darth Vader. I am an extraterrestrial from the planet Vulcan!"},
+  {name: "Ana Cecília Bittencourt", bio: "Who the hell is John F. Kennedy?"},
+  {name: "Benício Barroso Neto", bio: "Hello? Hello? Anybody home? Huh? Think, McFly. Think! I gotta have time to get them retyped. Do you realize what would happen if I hand in my reports in your handwriting? I'll get fired. You wouldn't want that to happen, would ya? Would ya?"},
+  {name: "Srta. Bruna Goulart", bio: "Scram, McFly. I'm cuttin' in."},
+  {name: "Maria Fernanda Veles", bio: "You're late! Do you have no concept of time?"},
+  {name: "Emanuelly da Penha", bio: "The way I see it, if you're gonna build a time machine into a car, why not do it with some style?"},
+  {name: "Sra. Isabelly Conceição", bio: "Great Scott!"},
+  {name: "Morgana Ribeira Jr.", bio: "Ah, Jesus Christ! Jesus Christ, Doc, you disintegrated Einstein!"},
+  {name: "Davi Camacho", bio: "So you're my Uncle Joey. Better get used to these bars, kid."},
+  {name: "Lívia Ramires", bio: "Since you're new here, I-I'm gonna cut you a break, today. So, why don't you make like a tree and get outta here?"},
+  {name: "Srta. Gúbio Antunes", bio: "He's an idiot. Comes from upbringing. His parents are probably idiots, too. Lorraine, you ever have a kid who acts that way, I'll disown you."}
+])
+
+p "SUCCESS Seeding"
