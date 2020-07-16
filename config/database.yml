@@ -17,6 +17,4 @@ test:
 
 production:
   <<: *default
-  database: free_books_production
-  username: free_books
-  password: <%= ENV['FREE_BOOKS_DATABASE_PASSWORD'] %>
+  database: <%= ENV['DATABASE_URL'] %>
